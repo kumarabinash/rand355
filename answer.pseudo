@@ -4,10 +4,10 @@ class RandGen
   #Name can be read and set
   attr_accessor :name
 
-  #Option to set while creating a new object
+  #Option to set name while creating a new object
   def initialize(*args)
     if args[0].nil?
-      puts "Please set a name by calling name on your object."
+      puts "Please set a name by calling 'name' on your object."
     else
       @name = args[0]
     end
@@ -21,7 +21,7 @@ class RandGen
       puts "#{@name} #{rand(7...15)}"
     else
       # If name is not( or nil) it displays messge to set name first.
-      puts "Name not set yet. First set a name by calling name on your object."
+      puts "Name not set yet. First set a name by calling 'name' on your object."
     end
   end
 
